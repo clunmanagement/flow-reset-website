@@ -49,10 +49,10 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.45 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <a href="#booking" className="px-10 py-4 bg-[#6B4C1E] text-white text-sm tracking-widest uppercase rounded-full hover:bg-[#8B6A3A] transition-all hover:scale-105 shadow-lg shadow-[#6B4C1E]/20">
+          <a href="#booking" className="px-10 py-4 bg-[#6B4C1E] text-white text-sm tracking-widest uppercase rounded-full hover:bg-[#8B6A3A] hover:scale-105 transition duration-150 ease-out shadow-lg shadow-[#6B4C1E]/20">
             {tx.hero.cta1}
           </a>
-          <a href="#classes" className="px-10 py-4 border-2 border-[#6B4C1E]/25 text-[#6B4C1E] text-sm tracking-widest uppercase rounded-full hover:border-[#6B4C1E] transition-all hover:scale-105">
+          <a href="#classes" className="px-10 py-4 border-2 border-[#6B4C1E]/25 text-[#6B4C1E] text-sm tracking-widest uppercase rounded-full hover:border-[#6B4C1E] hover:scale-105 transition duration-150 ease-out">
             {tx.hero.cta2}
           </a>
         </motion.div>
