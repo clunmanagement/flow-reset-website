@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   title: "Flow Reset Pilates",
   description: "Tu espacio para crecer, sanar y resetear. Clases de Pilates Reformer en un ambiente íntimo y premium.",
   icons: {
-    icon: "/flow-reset-website/icon.svg",
+    icon: [
+      { url: "/flow-reset-website/favicon.svg", type: "image/svg+xml" },
+      { url: "/flow-reset-website/favicon.ico", type: "image/x-icon" },
+    ],
   },
 };
 
