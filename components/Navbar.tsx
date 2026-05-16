@@ -40,7 +40,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-5 lg:gap-8">
           {links.map((link) => (
             <li key={link.label}>
               <a
@@ -67,7 +67,7 @@ export default function Navbar() {
           <li>
             <a
               href="#booking"
-              className="text-sm tracking-widest uppercase px-5 py-2.5 bg-[#F9C0C0] text-[#6B4C1E] rounded-full hover:bg-[#F0A0A0] transition-colors"
+              className="whitespace-nowrap text-sm tracking-widest uppercase px-5 py-2.5 bg-[#F9C0C0] text-[#6B4C1E] rounded-full hover:bg-[#F0A0A0] transition-colors"
             >
               {tx.nav.book}
             </a>
