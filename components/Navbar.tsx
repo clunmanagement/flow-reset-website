@@ -67,7 +67,7 @@ export default function Navbar() {
           <li>
             <a
               href="#booking"
-              className="whitespace-nowrap text-sm tracking-widest uppercase px-5 py-2.5 bg-[#F9C0C0] text-[#6B4C1E] rounded-full hover:bg-[#F0A0A0] transition-colors"
+              className="whitespace-nowrap text-sm tracking-widest uppercase px-5 py-2.5 bg-[#F9C0C0] text-[#6B4C1E] rounded-full hover:bg-[#F0A0A0] transition duration-150 ease-out"
             >
               {tx.nav.book}
             </a>

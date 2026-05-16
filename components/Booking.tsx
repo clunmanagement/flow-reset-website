@@ -49,7 +49,7 @@ export default function Booking() {
             <label className="text-xs tracking-widest uppercase text-[#6B4C1E]/50">{tx.booking.message}</label>
             <textarea rows={3} placeholder={tx.booking.messagePlaceholder} className="px-4 py-3 rounded-2xl bg-[#F5F0EB] text-[#6B4C1E] placeholder:text-[#6B4C1E]/30 text-sm font-light outline-none focus:ring-2 focus:ring-[#F9C0C0] transition-all resize-none" />
           </div>
-          <button type="submit" className="w-full py-4 bg-[#6B4C1E] text-white text-sm tracking-widest uppercase rounded-full hover:bg-[#8B6A3A] transition-colors mt-2 font-medium">
+          <button type="submit" className="w-full py-4 bg-[#6B4C1E] text-white text-sm tracking-widest uppercase rounded-full hover:bg-[#8B6A3A] transition duration-150 ease-out mt-2 font-medium">
             {tx.booking.submit}
           </button>
         </motion.form>

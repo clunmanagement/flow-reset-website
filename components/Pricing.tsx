@@ -55,7 +55,7 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <a href="#booking" className={`text-center text-sm tracking-widest uppercase py-3.5 rounded-full transition-all hover:scale-105 font-medium ${highlight ? "bg-[#F9C0C0] text-[#6B4C1E] hover:bg-[#F0A0A0]" : "bg-[#6B4C1E] text-white hover:bg-[#8B6A3A]"}`}>
+                <a href="#booking" className={`text-center text-sm tracking-widest uppercase py-3.5 rounded-full transition duration-150 ease-out hover:scale-105 font-medium ${highlight ? "bg-[#F9C0C0] text-[#6B4C1E] hover:bg-[#F0A0A0]" : "bg-[#6B4C1E] text-white hover:bg-[#8B6A3A]"}`}>
                   {tx.pricing.cta}
                 </a>
               </motion.div>

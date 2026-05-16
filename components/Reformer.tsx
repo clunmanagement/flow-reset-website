@@ -86,7 +86,7 @@ export default function Reformer() {
           </p>
           <a
             href="#booking"
-            className="whitespace-nowrap px-8 py-4 bg-[#F9C0C0] text-[#6B4C1E] text-sm tracking-widest uppercase rounded-full hover:bg-[#F0A0A0] transition-all hover:scale-105 font-medium"
+            className="whitespace-nowrap px-8 py-4 bg-[#F9C0C0] text-[#6B4C1E] text-sm tracking-widest uppercase rounded-full hover:bg-[#F0A0A0] transition duration-150 ease-out hover:scale-105 font-medium"
           >
             {tx.reformer.cta}
           </a>
