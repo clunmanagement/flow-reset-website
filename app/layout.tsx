@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Flow Reset Pilates",
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col"><LanguageProvider>{children}</LanguageProvider></body>
+      <body className="min-h-full flex flex-col"><ScrollToTop /><LanguageProvider>{children}</LanguageProvider></body>
     </html>
   );
 }
