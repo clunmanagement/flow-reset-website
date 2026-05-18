@@ -6,13 +6,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Flow Reset Pilates",
   description: "Tu espacio para crecer, sanar y resetear. Clases de Pilates Reformer en un ambiente íntimo y premium.",
-  icons: {
-    icon: [
-      { url: "/flow-reset-website/favicon.svg", type: "image/svg+xml", sizes: "any" },
-      { url: "/flow-reset-website/favicon.ico", sizes: "32x32" },
-    ],
-    shortcut: "/flow-reset-website/favicon.ico",
-  },
 };
 
 export default function RootLayout({
