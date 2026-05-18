@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-28 bg-white" ref={ref}>
       <div className="max-w-4xl mx-auto px-6">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-[#6B4C1E]/50 mb-4">{tx.contact.eyebrow}</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#6B4C1E]">
             {tx.contact.heading} <span className="italic">{tx.contact.headingItalic}</span>

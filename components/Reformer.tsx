@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
@@ -41,7 +41,7 @@ export default function Reformer() {
 
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
           className="text-center mb-20"
@@ -60,7 +60,7 @@ export default function Reformer() {
           {tx.reformer.benefits.map((benefit, i) => (
             <motion.div
               key={benefit.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.12 }}
               className="bg-white rounded-[2rem] p-7 flex flex-col gap-4 hover:shadow-md transition-shadow"

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
@@ -12,7 +12,7 @@ export default function Booking() {
   return (
     <section id="booking" className="py-28 bg-[#F5F0EB]" ref={ref}>
       <div className="max-w-2xl mx-auto px-6">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-12">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-12">
           <p className="text-xs tracking-[0.3em] uppercase text-[#6B4C1E]/50 mb-4">{tx.booking.eyebrow}</p>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#6B4C1E]">
             {tx.booking.heading} <span className="italic">{tx.booking.headingItalic}</span>
@@ -20,7 +20,7 @@ export default function Booking() {
           <p className="text-[#6B4C1E]/60 font-light mt-4">{tx.booking.sub}</p>
         </motion.div>
 
-        <motion.form initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.2 }} className="bg-white rounded-3xl p-8 md:p-10 flex flex-col gap-5 shadow-sm" onSubmit={(e) => e.preventDefault()}>
+        <motion.form initial={{ opacity: 0, y: 24 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.2 }} className="bg-white rounded-3xl p-8 md:p-10 flex flex-col gap-5 shadow-sm" onSubmit={(e) => e.preventDefault()}>
           <div className="grid sm:grid-cols-2 gap-5">
             <div className="flex flex-col gap-2">
               <label className="text-xs tracking-widest uppercase text-[#6B4C1E]/50">{tx.booking.firstName}</label>

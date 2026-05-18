@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
@@ -14,7 +14,7 @@ export default function Classes() {
   return (
     <section id="classes" className="py-28 bg-[#F5F0EB]" ref={ref}>
       <div className="max-w-6xl mx-auto px-6">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-[#6B4C1E]/50 mb-4">{tx.classes.eyebrow}</p>
           <h2 className="font-serif text-5xl md:text-6xl font-bold text-[#6B4C1E]">
             {tx.classes.heading} <span className="italic">{tx.classes.headingItalic}</span>
@@ -25,7 +25,7 @@ export default function Classes() {
           {tx.classes.items.map((cls, i) => (
             <motion.div
               key={cls.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.15 }}
               whileHover={{ y: -8, transition: { duration: 0.25 } }}

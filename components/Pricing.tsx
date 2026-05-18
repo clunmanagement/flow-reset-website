@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import { useLang } from "@/contexts/LanguageContext";
 
@@ -12,7 +12,7 @@ export default function Pricing() {
   return (
     <section id="pricing" className="py-28 bg-white" ref={ref}>
       <div className="max-w-5xl mx-auto px-6">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-center mb-16">
           <p className="text-xs tracking-[0.3em] uppercase text-[#6B4C1E]/50 mb-4">{tx.pricing.eyebrow}</p>
           <h2 className="font-serif text-5xl md:text-6xl font-bold text-[#6B4C1E]">
             {tx.pricing.heading} <span className="italic">{tx.pricing.headingItalic}</span>
@@ -25,7 +25,7 @@ export default function Pricing() {
             return (
               <motion.div
                 key={plan.name}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 24 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className={`rounded-[2rem] p-8 flex flex-col gap-6 ${highlight ? "bg-[#6B4C1E] text-white scale-105 shadow-2xl shadow-[#6B4C1E]/30" : "bg-[#F5F0EB] text-[#6B4C1E]"}`}
